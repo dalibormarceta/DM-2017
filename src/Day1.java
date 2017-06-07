@@ -12,7 +12,7 @@ public class Day1 {
         result = isPalindrome2(palindrome);
         System.out.println( palindrome + " is " + "Palindrome 2 " + result);
 
-        palindrome = "baAB";
+        palindrome = "1b2a3A4B5";
         result = isPalindrome1(palindrome);
         System.out.println( palindrome + " is " + "Palindrome 1 " + result);
         result = isPalindrome2(palindrome);
@@ -32,7 +32,6 @@ public class Day1 {
             }
         }
         String newText = builder.toString();
-        System.out.println( newText );
 
         for (int i=0; i<newText.length()-1;i++){
             if (newText.charAt(i) != newText.charAt(newText.length()-i-1))
