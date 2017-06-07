@@ -7,20 +7,21 @@ public class Day1 {
         // write your code here
 
         String palindrome = "aAbB";
-        boolean result = isPalindrome2(palindrome);
-        System.out.println( palindrome + " is " + "Palindrome " + result);
+        boolean result = isPalindrome1(palindrome);
+        System.out.println( palindrome + " is " + "Palindrome 1 " + result);
+        result = isPalindrome2(palindrome);
+        System.out.println( palindrome + " is " + "Palindrome 2 " + result);
 
         palindrome = "baAB";
+        result = isPalindrome1(palindrome);
+        System.out.println( palindrome + " is " + "Palindrome 1 " + result);
         result = isPalindrome2(palindrome);
-        System.out.println( palindrome + " is " + "Palindrome " + result);
+        System.out.println( palindrome + " is " + "Palindrome 2 " + result);
 
     }
 
     public static boolean isPalindrome1 (String inputText) {
-        if (inputText == null) {
-            return true;
-        }
-        if (inputText.length() == 0){
+        if (inputText == null || inputText.length() == 0){
             return true;
         }
 
@@ -33,7 +34,7 @@ public class Day1 {
         String newText = builder.toString();
 
         for (int i=0; i<newText.length()-1;i++){
-            if (newText.charAt(i) != newText.charAt(newText.length()-i-1))
+            if (Character.toUpperCase(newText.charAt(i)) != Character.toUpperCase(newText.charAt(newText.length()-i-1)))
                 return false;
         }
 
@@ -42,17 +43,14 @@ public class Day1 {
     }
 
     public static boolean isPalindrome2(String inputText) {
-        if (inputText == null) {
-            return true;
-        }
-        if (inputText.length() == 0){
+        if (inputText == null || inputText.length() == 0){
             return true;
         }
 
         int i=lskip(inputText,0)
                 ,j=rskip(inputText,inputText.length()-1);
         while (i<j){
-            if (inputText.charAt(i) != inputText.charAt(j))
+            if (Character.toUpperCase(inputText.charAt(i)) != Character.toUpperCase(inputText.charAt(j)))
                 return false;
 
             i=lskip(inputText,i+1);
