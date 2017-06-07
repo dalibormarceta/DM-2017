@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="052ebcbd-bbe9-4e81-a98e-412310d51ce7" name="Default" comment="Test">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DM-2017/HelloWorld.class" afterPath="" />
+    <list default="true" id="052ebcbd-bbe9-4e81-a98e-412310d51ce7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DM-2017/Day1.class" afterPath="$PROJECT_DIR$/out/production/DM-2017/Day1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Day1.java" afterPath="$PROJECT_DIR$/src/Day1.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -374,6 +372,14 @@
       <option name="presentableId" value="Default" />
       <updated>1496703902345</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test">
+      <created>1496877784378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496877784378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
