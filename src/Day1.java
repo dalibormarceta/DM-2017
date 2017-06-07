@@ -26,12 +26,13 @@ public class Day1 {
         }
 
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < inputText.length()-1; i++) {
+        for (int i = 0; i < inputText.length(); i++) {
             if (Character.isAlphabetic(inputText.charAt(i))){
                 builder.append(Character.toUpperCase(inputText.charAt(i)));
             }
         }
         String newText = builder.toString();
+        System.out.println( newText );
 
         for (int i=0; i<newText.length()-1;i++){
             if (newText.charAt(i) != newText.charAt(newText.length()-i-1))
