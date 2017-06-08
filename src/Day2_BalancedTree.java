@@ -3,7 +3,7 @@
  * Created by marceta on 6/7/17.
  */
 
-public class Binarytree
+class Binarytree
 {
     private static BTNode root;
 
@@ -24,26 +24,26 @@ public class Binarytree
         }
     }
 
-    public static boolean isBalanced(BTNode root) {
+    public boolean isBalanced(BTNode root) {
 
         return (maxdepth(root) - mindepth(root) < 2);
     }
 
-    public static int maxdepth(BTNode root) {
+    public int maxdepth(BTNode root) {
         if (root == null) {
             return 0;
         }
         return 1 + Math.max(maxdepth(root.left), maxdepth(root.right));
     }
 
-    public static int mindepth(BTNode root) {
+    public int mindepth(BTNode root) {
         if (root == null) {
             return 0;
         }
         return 1 + Math.min(mindepth(root.left), mindepth(root.right));
     }
 
-    public static void main(String args[])
+    public void main(String args[])
     {
         BTNode n1 = new BTNode(1);
         BTNode n2 = new BTNode(4);
@@ -63,8 +63,8 @@ public class Binarytree
 
 class BTNode {
     private int key;
-    private BTNode left;
-    private BTNode right;
+    BTNode left;
+    BTNode right;
 
     BTNode (int key) {
         this.key = key;
