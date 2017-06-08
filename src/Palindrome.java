@@ -2,7 +2,7 @@
  * Created by marceta on 6/6/17.
  */
 
-public class Day1_Palindrome {
+public class Palindrome {
     public static void main(String[] args) {
         // write your code here
 
